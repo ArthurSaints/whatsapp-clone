@@ -5,6 +5,9 @@ function App() {
   return (
     <div className="app">
       <h1>MERN STACK</h1>
+
+      {/* sidebar */}
+      {/* chat */}
     </div>
   );
 }
