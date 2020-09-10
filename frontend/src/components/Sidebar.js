@@ -3,6 +3,7 @@ import React from "react";
 import DonutLargeIcon from "@material-ui/icons/DonutLarge";
 import ChatIcon from "@material-ui/icons/Chat";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import { SearchOutlined } from "@material-ui/icons";
 import { Avatar, IconButton } from "@material-ui/core";
 
 import "./Sidebar.css";
@@ -22,6 +23,13 @@ export default function Sidabar() {
           <IconButton>
             <MoreVertIcon />
           </IconButton>
+        </div>
+      </div>
+
+      <div className="sidebar__search">
+        <div className="sidebar__searchContainer">
+          <SearchOutlined />
+          <input placeholder="Search ou start new chat" type="text" />
         </div>
       </div>
     </div>
