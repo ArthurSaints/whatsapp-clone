@@ -1,12 +1,29 @@
 import React from "react";
 
+import DonutLargeIcon from "@material-ui/icons/DonutLarge";
+import ChatIcon from "@material-ui/icons/Chat";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import { Avatar, IconButton } from "@material-ui/core";
+
 import "./Sidebar.css";
 
 export default function Sidabar() {
   return (
     <div className="sidebar">
-      <h1>i'm a sidebar</h1>
-      <div className="sidebar__header"></div>
+      <div className="sidebar__header">
+        <Avatar src="https://avatars1.githubusercontent.com/u/37190318?s=460&u=da61e29b008732fc908e946862196e17a378382d&v=4" />
+        <div className="sidebar__headerRight">
+          <IconButton>
+            <DonutLargeIcon />
+          </IconButton>
+          <IconButton>
+            <ChatIcon />
+          </IconButton>
+          <IconButton>
+            <MoreVertIcon />
+          </IconButton>
+        </div>
+      </div>
     </div>
   );
 }
