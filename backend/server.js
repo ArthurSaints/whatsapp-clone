@@ -1,6 +1,7 @@
 // importing
 import express from "express";
 import mongoose from "mongoose";
+import cors from "cors";
 import Pusher from "pusher";
 
 import Messages from "./dbMessages.js";
@@ -19,12 +20,7 @@ const pusher = new Pusher({
 
 // middlewares
 app.use(express.json());
-
-app.use((req, res, next) => {
-    res.setHeader("Access-Control-Allow-Origin", "*");
-    res.setHeader("Access-Control-Allow-Headers", "*");
-    next();
-});
+app.use(cors());
 
 // DB Config
 const connectionURL =
